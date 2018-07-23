@@ -14,3 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::prefix('api')->group(function (){
+    Route::get('shops','ApiController@shops')->name('shops');
+    Route::get('shop','ApiController@shop')->name('shop');
+});
