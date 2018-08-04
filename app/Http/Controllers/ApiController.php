@@ -227,6 +227,7 @@ class ApiController extends Controller
             'username' => $request->username,
             'tel' => $request->tel,
             'password' => $password,
+            'status'=>0,
         ]);
         return json_encode([
             'status' => 'true',
