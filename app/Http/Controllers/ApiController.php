@@ -218,7 +218,7 @@ class ApiController extends Controller
         $sms = $request->sms;
         if ($redis != $sms) {
             return json_encode([
-                'ststus' => 'false',
+                'status' => 'false',
                 'message' => '验证码错误',
             ]);
         }

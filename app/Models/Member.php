@@ -8,5 +8,5 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 class Member extends Authenticatable
 {
     use Notifiable;
-    protected $fillable=['username','password','tel'];
+    protected $fillable=['username','password','tel','status'];
 }
