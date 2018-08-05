@@ -538,8 +538,8 @@ class ApiController extends Controller
                 //$message->to( $_SERVER['email']);
                 $message->from('cgj245zijizou@163.com','cgj245zijizou');});
 //发短信
-            //$tel =Member::where('id',$user_id)->select('tel')->first();
-            $tel=16605925195;
+            $tel =Member::where('id',$user_id)->select('tel')->first();
+            //$tel=16605925195;
             $params = [];
 
             // *** 需用户填写部分 ***
